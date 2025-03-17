@@ -7,13 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/text1"
+        android:layout_width="109dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="70dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:text="CheckBox"
+        app:layout_constraintBottom_toTopOf="@+id/editName"
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="116dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="223dp"
+        android:text="Switch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <EditText
+        android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/btn1"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
